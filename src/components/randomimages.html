@@ -1,0 +1,19 @@
+<md-progress-circular md-mode="indeterminate" class="md-accent" ng-hide="randomimages.loaded"></md-progress-circular>
+<md-content ng-show="randomimages.loaded" layout-padding>
+    <div layout="row" layout-align="center center">
+        <h2 class="md-display-2">{{randomimages.word}}</h2>
+        <md-button class="md-fab" aria-label="Reload" ng-click="randomimages.load()">
+            <md-icon class="md-light" style="height: 42px" md-font-library="material-icons">autorenew</md-icon>
+        </md-button>
+    </div>
+    <md-card ng-repeat="image in randomimages.results.results track by image.imageId" layout="row">
+        <a ng-href="{{image.originalContextUrl}}" target="_blank"> 
+            <img alt="Failed to download" ng-src="{{image.tbUrl}}" class="sm-card-image">
+        </a>
+        <md-card-content layout="column" layout-fill layout-align="center center">
+            <a class="md-headline" ng-href="{{image.originalContextUrl}}" target="_blank"> 
+                {{image.titleNoFormatting}}
+            </a>
+        </md-card-content>
+    </md-card>
+</md-content>
