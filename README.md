@@ -1,6 +1,6 @@
 # A demo app using Angular Material
 
-The application tiself is displaying a random word [setgogo API](http://randomword.setgetgo.com/) and results for it from the [Google Image search API](https://developers.google.com/image-search/v1/jsondevguide)
+The application itself is displaying a random word using [setgogo API](http://randomword.setgetgo.com/) and results for it from the [Google Image search API](https://developers.google.com/image-search/v1/jsondevguide)
 
 ## The app features:
 - gulp
