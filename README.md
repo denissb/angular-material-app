@@ -7,7 +7,6 @@ The application itself is displaying a random word using [setgogo API](http://ra
 - jspm
 - angular 1.4
 - angular material
-- jspm
 - es6 with [Babel](https://babeljs.io/)
 
 # Setup
