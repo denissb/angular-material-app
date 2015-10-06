@@ -13,7 +13,6 @@ The application itself is displaying a random word using [setgogo API](http://ra
 Make sure you have [Node.JS](https://nodejs.org/), [gulp](http://gulpjs.com/) and [jspm](http://jspm.io/) installed.
 Then run:
  ```
- npm install
  jspm install
  gulp
  ```
